@@ -109,6 +109,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: grey;
 }
 
 header {
@@ -144,8 +145,13 @@ header nav ul {
     padding: 0;
 }
 
+footer h4 {
+    text-align: center;
+}
+
 footer p {
     margin: 0;
+    text-align: center;
 }
 
 footer .content-wrapper {
@@ -178,6 +184,8 @@ footer .social-icons p {
 
 footer .copyright {
     margin: 20px 0;
+    width: 100%;
+    text-align: center;
 }
 
 
@@ -198,6 +206,12 @@ aside {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color:rgb(102, 145, 102);
+}
+
+input {
+    margin: 15px 0;
+    width: 100%;
 }
  
 /* Features */
@@ -233,6 +247,7 @@ aside {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    background-color:rgb(102, 145, 102);
 }
 
 .reviews h2 {
@@ -376,17 +391,142 @@ aside {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media only screen and (min-width: 768px) {
+    /* Tablet Styles Here */
+    header {
+        justify-content: center;
+    }
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+    header .content-wrapper {
+        justify-content: space-between;
+    }
+    .header-divider{
+        width: 0%;
+    }
+    header nav {
+        width: 25%;
+    }
+
+    header nav ul {
+        justify-content: space-evenly;
+    }
+
+    aside .content-wrapper {
+        display: flex;  
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
+
+    aside div {
+        width: 40%;
+        margin: 0;  
+    }
+
+    .features-items{
+        width: 90%;
+        align-content: center;
+        margin: auto;
+    }
+    .features article {
+        flex-basis: 30%;
+        padding:30px 60px;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+    
+    .reviews article div {
+        display: flex;
+        justify-content: center;
+        flex-flow: column wrap;
+        height: 240px;   
+    }
+
+    .reviews article div img {
+        width: 50%;
+        height: 200px;
+    }
+
+    .reviews p, .reviews h3{
+        width:50%;
+        margin: 10px;
+    }
+
+    footer .content-wrapper{
+        width: 90%;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        align-items: flex-start;
+    }
+    
+    .copyright {
+        width: 100%;
+        text-align: center;
+    }
+
+/*=========================================================
+        ABOUT page
+===============================================================*/
+    .mission-content {
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .mission-content p {
+        width: 45%;
+    }
+
+    .contact-section, .content-wrapper h2 {
+        width:85%;
+        margin: 0;
+    }
+
+    .contact-content {
+        display: flex;
+        justify-content: space-between;    
+        align-items: center;
+    }
+
+/*=========================================================
+        FAQ page
+===============================================================*/
+    .faq h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .faq-content {
+        flex-basis: 40%;
+        margin: 0 5%;
+    }
+
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+@media only screen and (min-width: 1200px) {
+/* Desktop Styles Here */
+
+.features-items{
+    width: 90%;
+    align-content: center;
+    margin: auto;
 }
+.features article {
+    width: 20%;
+    padding:30px 60px;
+    margin: 0;
+    justify-content: space-between;
+}
+
+
+}
+
 
 /* ==========================================================================
    Print styles.
