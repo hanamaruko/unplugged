@@ -105,6 +105,7 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
+    color: #e2e3ed;
 }
 
 a {
@@ -115,6 +116,9 @@ a {
 ul, 
 ol {
     list-style: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.125em;
  
 }
  
@@ -125,12 +129,14 @@ a {
 h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.875em;
+    font-weight: normal;
 }
 
 h3, 
 h4 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.125em;
+    font-weight: normal;
 }
  
 p {
@@ -154,6 +160,8 @@ address {
  
 }
 
+/*------------other style-------------*/
+
 
 
 
@@ -172,7 +180,8 @@ footer {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    background-color: grey;
+    background-color: #202322;
+    text-align: center;
 }
 
 header {
@@ -191,6 +200,7 @@ header .content-wrapper {
     width: 100%;
     height: 1px;
     margin: 10px 0 20px 0;
+    background: #3a3a3a;
 }
 
 header nav {
@@ -205,6 +215,7 @@ header nav ul {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    padding: 0;
 }
 
 footer {
@@ -268,8 +279,33 @@ aside {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    background-color:rgb(102, 145, 102);
+    background-color:#527158;
 }
+/* form style */
+aside .form {
+    margin-top: 30px;
+  }
+  
+  input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+  }
+  
+  input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
 
 /*input {
     margin: 15px 0;
@@ -290,6 +326,7 @@ aside {
 .features article {
     width: 55%;
     margin: 30px 0;
+    text-align: center;
 }
 
 .features .features-items {
@@ -309,7 +346,7 @@ aside {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    background-color:rgb(102, 145, 102);
+    background-color: #2a423a;
 }
 
 .reviews h2 {
@@ -317,7 +354,7 @@ aside {
 }
 
 .reviews h3 {
-    width: 55%;
+    width: 100%;
     margin: 20px 0;
 }
 
@@ -456,6 +493,19 @@ aside {
    ========================================================================== */
 @media only screen and (min-width: 768px) {
     /* Tablet Styles Here */
+    h1 {
+        font-size: 3em;
+        line-height: 1em;
+    }
+
+    h2 {
+        font-size: 2.25em;
+    }
+
+    h3, h4 {
+        font-size: 1.5em;
+    }
+
 
     /* General styles */
     .content-wrapper {
@@ -481,9 +531,11 @@ aside {
 
     header nav ul {
         justify-content: space-between;
+        font-size: 1em;
     }
 
     /* Hero area */
+    
 
     /* Aside area */
     aside .content-wrapper {
@@ -587,14 +639,25 @@ aside {
 @media only screen and (min-width: 1200px) {
     /* Desktop Styles Here */
 
+
     /* General styles */
+    html{
+        font-size: 18px;
+    }
+
+    p{
+        line-height: 1.334em;
+    }
+
+
     .content-wrapper {
         max-width: 960px;
     }
     /* Hero Area*/
     .hero-area h1{
-        width: 60%;
+        width: 70%;
     }
+
 
     /* Aside Area */
     aside .content-wrapper {
@@ -609,7 +672,7 @@ aside {
     /* Features area */
 
     .features h2{
-        width: 70%;
+        width: 100%;
     }
     
     .features article {
